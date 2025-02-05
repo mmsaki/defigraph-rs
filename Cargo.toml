@@ -2,6 +2,14 @@
 name = "defigraph-rs"
 version = "0.1.0"
 edition = "2024"
+authors = ["Meek meek10x@gmail.com"]
+description = "📦 a package for defi market token graph visualization"
+readme = "README.md"
+homepage = "https://github.com/mmsaki/deigraph-rs"
+repository = "https://github.com/mmsaki/deigraph-rs"
+license = "MIT"
+license-file = "LICENSE"
+keywords = ["graph", "defi", "token", "belmanford"]
 
 [dependencies]
 rust_decimal =  { version = "1.36", features = ["maths"]}
