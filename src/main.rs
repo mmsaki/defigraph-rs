@@ -1,11 +1,12 @@
+pub mod graph;
+use graph::edge::Edge;
+use graph::graph::Graph;
+use graph::pool::Pool;
+use graph::vertex::Vertex;
+use rust_decimal::{Decimal, MathematicalOps};
 use std::collections::HashMap;
 
-use graph::{edge::Edge, graph::Graph, pool::Pool, vertex::Vertex};
-use rust_decimal::{Decimal, MathematicalOps};
-
-mod graph;
-
-fn main() {
+pub fn run() -> String {
     let v1 = Vertex::new(String::from("ETH"), 18, String::from("0x0001"));
     let v2 = Vertex::new(String::from("USDC"), 18, String::from("0x0002"));
     let pool_address = "0x2323";
@@ -39,5 +40,9 @@ fn main() {
     adjascency_list.entry(ref_v2).or_insert(Vec::new()).push(e2);
 
     let g = Graph::new(adjascency_list);
-    println!("{:#?}", g);
+    format!("{:#?}", g)
+}
+
+fn main() {
+    println!("{}", run())
 }
