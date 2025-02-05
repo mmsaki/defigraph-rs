@@ -8,7 +8,6 @@ readme = "README.md"
 homepage = "https://github.com/mmsaki/defigraph-rs"
 repository = "https://github.com/mmsaki/defigraph-rs"
 license = "MIT"
-license-file = "LICENSE"
 keywords = ["graph", "defi", "token", "belmanford"]
 
 [dependencies]
