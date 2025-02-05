@@ -1,6 +1,6 @@
 use rust_decimal::Decimal;
 
-use crate::graph::vertex::Vertex;
+use super::vertex::Vertex;
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct Pool<'a> {
