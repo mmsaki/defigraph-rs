@@ -39,5 +39,5 @@ fn main() {
     adjascency_list.entry(ref_v2).or_insert(Vec::new()).push(e2);
 
     let g = Graph::new(adjascency_list);
-    println!("{:?}", g);
+    println!("{:#?}", g);
 }
